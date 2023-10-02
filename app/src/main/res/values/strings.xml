@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">designassignapp</string>
+    <string name="app_name">mobiledevassign1</string>
     <string name="originalAmtString">Mortgage Amount: </string>
     <string name="downPaymentString">Down Payment: </string>
     <string name="interestRateString">Interest rate: </string>
