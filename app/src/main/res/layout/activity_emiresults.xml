@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Parent linear layout with a vertical orientation containing the title -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EMIResults"
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- TextView for the 'EMI Calculator' Title -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#CBBDE8"
+        android:gravity="center"
+        android:paddingTop="13dp"
+        android:paddingBottom="15dp"
+        android:text="@string/EMIcalctitle"
+        android:textColor="#252327"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <!-- Linear layout containing a TextView and EditText field for the EMI amount -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/monthlyPaymentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EMIresultString"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            />
+
+        <EditText
+            android:id="@+id/monthlyPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:hint="Monthly Payment"/>
+
+
+    </LinearLayout>
+
+    <!-- Linear layout containing a TextView and EditText field for the total payment -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="50dp"
+            android:paddingStart="20dp"
+            android:text="@string/totalPaymentString"
+            android:id="@+id/totalPaymentLabel"/>
+
+        <EditText
+            android:id="@+id/totalPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:hint="Total Payment"/>
+
+    </LinearLayout>
+
+    <!-- Linear layout containing a TextView and EditText field for the total interest payment -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/totalInterestLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/totalInterestString"
+            />
+
+        <EditText
+            android:id="@+id/totalInterestPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:hint="Interest Payment"/>
+
+    </LinearLayout>
+
+    <!-- Linear layout for the 'Recalculate' button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/recalculatebutton"
+
+            android:layout_height="wrap_content"
+            android:layout_width ="wrap_content"
+            android:text="@string/recalcBtnString"
+            >
+
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">designassignapp</string>
+    <string name="originalAmtString">Mortgage Amount: </string>
+    <string name="downPaymentString">Down Payment: </string>
+    <string name="interestRateString">Interest rate: </string>
+    <string name="amortizationString">Amortization Period: </string>
+    <string name="calculateBtnString">Calculate</string>
+    <string name="clearBtnString">Clear</string>
+    <string name="EMIcalctitle">EMI Calculator</string>
+    <string name="EMIresultString">Monthly Payment (EMI): </string>
+    <string name="principalPaid">Principal Paid: </string>
+    <string name="totalPaymentString">Total Payment: </string>
+    <string name="totalInterestString">Total Interest Payment: </string>
+    <string name="recalcBtnString">Recalculate</string>
+
+
+</resources>
